@@ -76,7 +76,7 @@ custom_css = """
 """
 st.markdown(custom_css, unsafe_allow_html=True)
 
-GEMINI_API_KEY = "AIzaSyAue-pmxXvK_jzTFd00FZg9_Wl39RMqfB8"
+GEMINI_API_KEY = "ADD-YOUR-API-KEY-HERE"
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash')
 
@@ -274,4 +274,5 @@ with tab3:
         <div class="db-node"><div class="node-title">💳 payments</div><div class="node-key">🔗 FK: order_id</div></div>
     </div>
     """
+
     st.components.v1.html(html_graph, height=300)
